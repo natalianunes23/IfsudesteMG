@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c19ca96bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>DevNat</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./pinterest_profile_image.png" alt="Logo DevNat" height="150px" width="150px"> 
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://linkedin.com/in/natalians">Linkedin</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:nah.nunes23@gmail.com">Email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/5532985054844">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>{Dev </h1>
+                <h1> Nat}</h1>
+                <h5>Full Stack Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+            <div style="display: none;" id="sobre">
+                <p>
+                    Formada em Técnico em Desenvolvimento de Sistemas pelo IFSudesteMG.
+                    <br>
+                    Sou desenvolvedora júnior em:
+                </p>
+            </div>
+            <section class="trabalho">
+                <div class="flex">
+                    <div>
+                        <legend> Banco de Dados</legend><br>
+                        <img src="./data-base.jpg" width="200px" height="200px">
+                        
+                    </div>
+                    <div>
+                        <legend>Java, JS, Python, C#, Node JS e PHP</legend>
+                        <img src="./linguagens.jpg" widht="200px" height="200px">
+                        
+                    </div>
+                    <div>
+                        <legend>Android </legend><br>
+                        <img src="./android.png" width="200px" height="200px">
+                        
+                    </div>   
+                </div>
+            </section>
+            
+            <div class="form">
+                <div>
+                   <p>Deixe seu contato!</p> 
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Informe seu email aqui!">
+                    <button onclick="enviar">Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('sobre');
+            display.classList.toggle('active');
+        }
+    </script>
+    <footer>
+         Desenvolvido por Natália Nunes
+    </footer>
+    
+</body>
+</html>
